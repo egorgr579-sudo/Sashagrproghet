@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мій AI-проєкт</title>
+<style>
+:root{--bg:#f4f7fb;--card:#fff;--text:#172033;--muted:#64748b;--accent:#5865f2;--accent2:#7c3aed;--line:#e5e7eb}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--text)}
+nav{position:sticky;top:0;z-index:10;background:#ffffffdd;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.navin{max-width:1100px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:20px;color:var(--accent)}
+nav a{color:var(--text);text-decoration:none;margin-left:22px;font-size:14px;font-weight:600}
+.hero{background:linear-gradient(135deg,#4f46e5,#7c3aed);color:white;padding:90px 22px}
+.hero-in{max-width:1100px;margin:auto}
+.tag{display:inline-block;background:#ffffff22;border:1px solid #ffffff44;border-radius:999px;padding:8px 14px;font-size:14px}
+h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:22px 0 15px;max-width:800px}
+.hero p{font-size:20px;max-width:700px;color:#eee}
+.btn{display:inline-block;margin-top:20px;background:white;color:#4f46e5;padding:13px 20px;border-radius:12px;text-decoration:none;font-weight:800}
+main{max-width:1100px;margin:auto;padding:55px 22px}
+section{margin-bottom:65px}
+.section-title{font-size:34px;margin-bottom:10px}
+.subtitle{color:var(--muted);margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 8px 25px #1720330b}
+.num{width:42px;height:42px;border-radius:12px;background:#eef2ff;color:var(--accent);display:grid;place-items:center;font-weight:900}
+.card h3{margin-bottom:8px}
+.prompt{background:#111827;color:#e5e7eb;border-radius:14px;padding:16px;font-size:14px;line-height:1.55;margin-top:18px}
+.prompt b{color:#a5b4fc}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.info .card{padding:30px}
+.check{display:flex;gap:15px;margin:15px 0;padding:17px;border-radius:14px;background:#f8fafc;border:1px solid var(--line)}
+.check strong{display:block;margin-bottom:3px}
+.icon{font-size:24px}
+footer{background:#111827;color:#cbd5e1;text-align:center;padding:35px 20px}
+@media(max-width:800px){.grid,.info{grid-template-columns:1fr}nav a{margin-left:8px;font-size:12px}.hero{padding:65px 22px}}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="navin">
+<div class="logo">AI • PROJECT</div>
+<div>
+<a href="#tasks">AI-задачі</a>
+<a href="#service">Сервіс</a>
+<a href="#manual">Самостійно</a>
+<a href="#check">Перевірка</a>
+</div>
+</div>
+</nav>
+
+<header class="hero">
+<div class="hero-in">
+<span class="tag">Шкільний проєкт</span>
+<h1>Як AI допомагає створювати сайт</h1>
+<p>Мій сайт про використання штучного інтелекту під час роботи над проєктом про Minecraft.</p>
+<a class="btn" href="#tasks">Переглянути проєкт ↓</a>
+</div>
+</header>
+
+<main>
+<section id="tasks">
+<h2 class="section-title">Три задачі для AI</h2>
+<p class="subtitle">Кожен запит складається з п’яти частин: контекст, користувачі, задача, обмеження та формат.</p>
+
+<div class="grid">
+<article class="card">
+<div class="num">01</div>
+<h3>Текст головної сторінки</h3>
+<p>AI допоможе створити короткий та зрозумілий вступ про Minecraft.</p>
+<div class="prompt">
+<b>Контекст:</b> сайт про Minecraft для шкільного проєкту.<br>
+<b>Користувачі:</b> школярі та гравці Minecraft.<br>
+<b>Задача:</b> написати короткий текст для головної сторінки.<br>
+<b>Обмеження:</b> до 50 слів, проста українська.<br>
+<b>Формат:</b> один абзац без пояснень.
+</div>
+</article>
+
+<article class="card">
+<div class="num">02</div>
+<h3>Описи модів</h3>
+<p>AI допоможе швидко підготувати короткі описи модифікацій.</p>
+<div class="prompt">
+<b>Контекст:</b> на сайті є розділ із модами Minecraft.<br>
+<b>Користувачі:</b> гравці, які шукають цікаві моди.<br>
+<b>Задача:</b> написати описи трьох модів.<br>
+<b>Обмеження:</b> до 30 слів кожен, без неправди.<br>
+<b>Формат:</b> назва — короткий опис.
+</div>
+</article>
+
+<article class="card">
+<div class="num">03</div>
+<h3>Заголовки розділів</h3>
+<p>AI допоможе придумати короткі та зрозумілі назви розділів.</p>
+<div class="prompt">
+<b>Контекст:</b> сайт має розділи про моди, версії та поради.<br>
+<b>Користувачі:</b> нові та досвідчені гравці.<br>
+<b>Задача:</b> придумати по 3 заголовки для кожного розділу.<br>
+<b>Обмеження:</b> до 6 слів.<br>
+<b>Формат:</b> списком, без пояснень.
+</div>
+</article>
+</div>
+</section>
+
+<section id="service">
+<h2 class="section-title">Який сервіс я використаю?</h2>
+<div class="info">
+<div class="card">
+<h3>🤖 ChatGPT</h3>
+<p>Я скористаюся <b>ChatGPT</b>, тому що він може створювати тексти, придумувати заголовки та допомагати працювати з інформацією.</p>
+</div>
+<div class="card">
+<h3>Чому саме він?</h3>
+<p>Це відповідає моєму паспорту AI-сервісів із частини 3 та підходить для задач, які я виконую на цьому сайті.</p>
+</div>
+</div>
+</section>
+
+<section id="manual">
+<h2 class="section-title">Що я роблю сам?</h2>
+<div class="card">
+<h3>🎨 Дизайн і зручність сайту</h3>
+<p>Я сам перевірятиму дизайн сайту, розташування кнопок і розділів.</p>
+<p><b>Чому без AI?</b> Я сам вирішую, який вигляд має мати сайт і наскільки зручно ним користуватися.</p>
+</div>
+</section>
+
+<section id="check">
+<h2 class="section-title">Як я перевірятиму відповіді AI?</h2>
+<p class="subtitle">Перед здачею я виконую кілька конкретних перевірок.</p>
+
+<div class="check"><div class="icon">✓</div><div><strong>Перевірю факти</strong>Порівняю інформацію про Minecraft з офіційним сайтом Minecraft.net.</div></div>
+<div class="check"><div class="icon">✓</div><div><strong>Перечитаю текст</strong>Сам перевірю орфографію, зрозумілість і логічність написаного.</div></div>
+<div class="check"><div class="icon">✓</div><div><strong>Перевірю умови запиту</strong>Переконаюся, що AI дотримався кількості слів, формату та інших обмежень.</div></div>
+<div class="check"><div class="icon">✓</div><div><strong>Перевірю сайт</strong>Перегляну сторінку в браузері та перевірю, чи працюють кнопки й чи правильно відображаються розділи.</div></div>
+</section>
+</main>
+
+<footer>
+<p><b>AI • PROJECT</b></p>
+<p>Шкільний проєкт про використання штучного інтелекту</p>
+</footer>
+</body>
+</html>
